@@ -1,65 +1,60 @@
+
 html {
-    background-image: url('img.jpg');
-    background-position: center;
+    min-height: 100%;
+    background-color: #101116;
+    background-image: url("img.jpg");
+    background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: #24272b;
     color: white;
     text-align: center;
-    overflow: hidden;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.18);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
-    text-shadow: 0.1em 0.1em 0.2em black;
-    font-size: 25px;
     color: white;
+    font-size: 25px;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 a {
     text-decoration: none;
 }
 
-#progress {
-    display: block;
-}
-
+#progress,
 #menu {
     display: block;
 }
 
-#crypto {
-    display: none;
-}
-
-#tools {
-    display: none;
-}
-
-#lnx {
-    display: none;
-}
-
+#crypto,
+#tools,
+#lnx,
 #mods {
     display: none;
 }
 
 .btn {
-    background-color: #003263;
-    color: white;
     width: 227px;
     height: 46px;
     padding-bottom: 5px;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #003263;
+    color: white;
     text-align: center;
     font-size: 20px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-style: none;
-    transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 4px;
+    transition: background-color 0.4s ease;
 }
 
 .btn:hover {
@@ -88,11 +83,4 @@ a {
 
 .btn-multi:hover {
     background-color: #daa520;
-}
-body {
-    background-image: url("img.jpg") !important;
-    background-size: cover !important;
-    background-attachment: fixed !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
 }
