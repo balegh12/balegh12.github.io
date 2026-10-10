@@ -89,3 +89,10 @@ a {
 .btn-multi:hover {
     background-color: #daa520;
 }
+body {
+    background-image: url("img.jpg") !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
